@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 // Sample API route
-app.get("/api/hello", (req, res) => {
+app.get("http://localhost:8080/api/hello", (req, res) => {
   res.json({ message: "Hello from Node + Express backend!" });
 });
 // Start server

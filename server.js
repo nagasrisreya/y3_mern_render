@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 // ✅ FIXED: Use only the route path, not full URL
-app.get("http://https://y3-mern-render.onrender.com/api/hello", (req, res) => {
+app.get("/api/hello", (req, res) => {
   res.json({ message: "Hello from Node + Express backend!" });
 });
 

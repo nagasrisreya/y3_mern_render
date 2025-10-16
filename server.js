@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 // Sample API route
-app.get("https://y3-mern-render.onrender.com/api/hello", (req, res) => {
+app.get("http://y3-mern-render.onrender.com/api/hello", (req, res) => {
   res.json({ message: "Hello from Node + Express backend!" });
 });
 // Start server
